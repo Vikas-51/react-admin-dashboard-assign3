@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --theme-color: rgb(245, 245, 247); /* Default color */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Global Styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Light Mode Styles */
+body.light {
+  background-color: #ffffff; /* Light background */
+  color: #000000; 
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Link Styles */
+a {
+  color: #1e88e5; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0d47a1; /* Darker link on hover */
+}
+
+/* Card Styles */
+.card {
+  background-color: #1f1f1f; /* Card background */
+  border: 1px solid #333; /* Default border color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  padding: 16px; /* Padding inside the card */
+  margin-bottom: 20px; /* Space between cards */
+}
+
+/* Adjusted Styles for Specific Elements */
+.dark .bg-white {
+  background-color: #2e2e2e; /* Darker background for better contrast */
+  color: #ff0202;
+}
+
+.dark .text-gray-800 {
+  color: #010101; /* Make text more readable */
+}
+
+/* Change card border color in Dark Mode */
+.dark .card {
+  border: 1px solid #ffffff; /* White border in dark mode */
+}
+
+/* Button Styles */
+.button {
+  background-color: #6200ea; /* Primary button color */
+  color: #ffffff; /* Text color for button */
+  border-radius: 4px; /* Rounded button corners */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.button:hover {
+  background-color: #3700b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Divider Styles */
+.divider {
+  border: 1px solid #333; /* Underline style */
+  margin: 20px 0; /* Space above and below */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    padding: 12px; /* Adjust padding for smaller screens */
+  }
+
+  .button {
+    width: 100%; /* Full-width buttons on small screens */
+  }
+}
