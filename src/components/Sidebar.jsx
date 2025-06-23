@@ -73,7 +73,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
   ];
 
   return (
-         <nav className="bg-gradient-to-r from-orange-400 to-red-400
+         <nav className="bg-gradient-to-r from-blue-900 to-orange-400
  rounded-lg p-4 flex flex-col gap-1 shadow-lg text-gray-800 dark:text-gray-200">
       {/* Sparkle Wand Component with Name */}
       <SparkleWand />
