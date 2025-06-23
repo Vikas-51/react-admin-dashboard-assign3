@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="h-15 flex items-center justify-between px-4 py-4 bg-gradient-to-r from-red-500 to-orange-300 text-white shadow-md">
+    <header className="h-15 flex items-center justify-between px-4 py-4 bg-gradient-to-r from-blue-950 to-indigo-800 text-white shadow-md">
 
      
       <div className="flex items-center space-x-3">
