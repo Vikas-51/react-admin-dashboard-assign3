@@ -11,7 +11,9 @@ const Header = () => {
          
           <img width="48" height="48" src="https://img.icons8.com/fluency/48/3d-builder.png" alt="3d-builder"/>
         </div>
-        <h1 className="text-2xl font-extrabold tracking-tight select-none">Sparkle-Dashboard</h1>
+        <h1 className="text-2xl font-extrabold tracking-tight select-none text-white animate-pulse drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]">
+  Sparkle-Dashboard
+</h1>
       </div>
 
       <div className="flex items-center space-x-6">
