@@ -27,7 +27,7 @@ const SparkleWand = () => {
   }, []);
 
   return (
-    <div className="sparkle-wand-container flex items-center justify-between mb-2 p-3 rounded-lg bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-gray-800 dark:to-gray-700">
+    <div className="sparkle-wand-container flex items-center justify-between mb-2 p-3 rounded-lg bg-gradient-to-r from-blue-400 to-black-50 dark:from-gray-800 dark:to-gray-700">
       <div className="flex items-center gap-1">
         <div className="sparkle-wand relative w-16 h-16 flex justify-center items-center">
           <div className="wand-core w-12 h-12 bg-gradient-to-r from-red-600 to-orange-500 rounded-full flex justify-center items-center shadow-lg animate-pulse">
@@ -73,8 +73,8 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
   ];
 
   return (
-         <nav className="bg-gradient-to-r from-blue-900 to-orange-400
- rounded-lg p-4 flex flex-col gap-1 shadow-lg text-gray-800 dark:text-gray-200">
+        <nav className="bg-[radial-gradient(ellipse_at_center,_#1C243A,_#251B3F,_#0A0A0A)]
+        rounded-lg p-4 flex flex-col gap-1 shadow-lg text-white dark:text-gray-500">
       {/* Sparkle Wand Component with Name */}
       <SparkleWand />
 
@@ -84,8 +84,8 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
           onClick={() => setActiveTab(id)}
           className={`flex items-center gap-3 px-4 py-3 rounded-lg font-semibold text-lg transition ${
             activeTab === id
-              ? "bg-gradient-to-r from-purple-600 via-teal-500 to-blue-500 text-white shadow-lg"
-              : "hover:bg-gray-100 dark:hover:bg-gray-700"
+              ? "bg-gradient-to-r from-purple-600 via-teal-500 to-blue-500 text-gray-800 shadow-lg"
+              : "hover:bg-gray-500 dark:hover:bg-gray-700"
           }`}
           aria-current={activeTab === id ? "page" : undefined}
           type="button"
@@ -98,7 +98,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
       {/* Dark Mode Toggle Button */}
       <button
   onClick={toggleTheme}
-  className="flex items-center gap-3 px-4 py-3 rounded-lg font-semibold text-lg transition hover:bg-gray-100 dark:hover:bg-gray-700"
+  className="flex items-center gap-3 px-4 py-3 rounded-lg font-semibold text-lg transition hover:bg-gray-500 dark:hover:bg-gray-700"
   type="button"
 >
   <span className="material-icons">{theme === "dark" ? "light_mode" : "dark_mode"}</span>
